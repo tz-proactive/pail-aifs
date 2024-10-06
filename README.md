@@ -46,6 +46,8 @@ run the `Multi-modal` section of the Colab. It uses a VLM (`google/paligemma-3b-
 ![VLM](./VLM2.png)
 
 ### Event based Recommendation
+The frontend LLM is already conditioning on the chat history context. However, the LLM model doesn't always utilize this information. To medigate this, I explicitly add a prompt engineering to make sure the model generate response using the user preference. The prompt engineering is `, based my preference`. This should look like the following:
+![EVENT](./event-based.png)
 
 ### Open-ended Multi-modal Recommendation
  
