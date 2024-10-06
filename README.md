@@ -50,6 +50,8 @@ The frontend LLM is already conditioning on the chat history context. However, t
 ![EVENT](./event-based.png) Note: In production, we should increase the database rows used by the Retrieval LLM, so we get more accurate product from H&M.
 
 ### Open-ended Multi-modal Recommendation
+The Multi-modal (frontend LLM + retrieval LLM + VLM) is also already conditioning on the chat history context. The same prompt engineering `, based my preference` works:
+![EVENT](./vlm-recommendation.png) ![EVENT](./vlm-recommendation2.png) Note: In a production system, we should use a more powerful VLM (e.g., `Pixtral 12B`, `Llama-3.2-vision-11B`). And increase the database rows used by the Retrieval LLM, so we get more accurate product from H&M.
  
 ### Style Matching & Complete Your Look
 
