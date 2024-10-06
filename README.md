@@ -43,7 +43,7 @@ run the `Retriever LLM` section of the Colab. It uses `Mistral-7B-Instruct-v0.1`
 
 ### Multi-modal (VLM)
 run the `Multi-modal` section of the Colab. It uses a VLM (`google/paligemma-3b-mix-224`) to generate image caption/description. Then this info is concatenated to the prompt. Adjust the `image_size` to include more high-resolution information for the VLM model. Note: In a production system, we should use a more powerful VLM (e.g., `Pixtral 12B`, `Llama-3.2-vision-11B`).
-![VLM](./vlm2.png)
+![VLM](./VLM2.png)
 
 ### Event based Recommendation
 
