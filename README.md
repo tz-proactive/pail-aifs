@@ -33,7 +33,7 @@ drwx------ 88 root root     4096 Oct  6 13:38 images
 ### Frontend LLM
 
 run the `Frontend LLM` section of the Colab. Adjust the `max_conversation_round` to the number of interactions you like. This should look like the following:
-![frontend LLM2](./frontend%20LLM2.png)
+![frontend LLM2](https://github.com/tz-proactive/pail-aifs/blob/main/Frontend%20LLM2.png)
 
 It uses `Mistral-7B-Instruct-v0.1` that takes all previous chat context (including a few warmup context), and generate answer for each new user's instruction. I added a warmup conversation as context, therefore the model will generate consistent text styling (e.g, inserting Emoji as seen fit.)
 
