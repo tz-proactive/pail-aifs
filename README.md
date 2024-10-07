@@ -35,7 +35,7 @@ drwx------ 88 root root     4096 Oct  6 13:38 images
 run the `Frontend LLM` section of the Colab. Adjust the `max_conversation_round` to the number of interactions you like. This should look like the following:
 ![frontend LLM2](https://github.com/tz-proactive/pail-aifs/blob/main/Frontend%20LLM2.png)
 
-It uses `Mistral-7B-Instruct-v0.1` that takes all previous chat context (including a few warmup context), and generate answer for each new user's instruction. I added a warmup conversation as context, therefore the model will generate consistent text styling (e.g, inserting Emoji as seen fit.)
+It uses `Mistral-7B-Instruct-v0.1` that takes all previous chat context (including a few warmup context), and generate answer for each new user's instruction. I added a warmup conversation as context, therefore the model will generate consistent text styling (e.g, inserting Emoji). This warm up history context can be viewed as a lightweight "PEFT". In the future, we can collect user feedbacks and apply more involved LoRA SFT or DPO.
 
 ### Retriever LLM
 run the `Retriever LLM` section of the Colab. It uses `Mistral-7B-Instruct-v0.1` together with a `ConversationalRetrieval` pipeline. Adjust the `max_conversation_round` to the number of interactions you like. Adjust the `max_hm_clothing_articles_to_load` to the number clothings of the H&M database to use. The larger the number, the more retrievel recall we have. The smaller the number the faster to compute the embedding for the database. The `use_front_end_llm` will combine the recommendation from the frontend LLM, as the retrievel conditioned model loses styling creativity. This should look like the following:
