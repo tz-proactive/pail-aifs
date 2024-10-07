@@ -61,4 +61,4 @@ To add the ability to complete the look, we need two fashion outfit matching pip
 ### Virtual TryOn
 Makese sure you have access and mounted the following directory: https://drive.google.com/drive/folders/13zXSlJlqI9xynbivGvIoV_s0Y4x3iCWT?usp=sharing. It includes the human models (e.g., Taylor Swift).
 Runs `VTO Imports` and then `Virtual TryOn H&M`. Due to GPU RAM constraints, I only show this feature standalone, without integrate with the rest of the LLMs. In production, to improve quality, we need to use stronger garment and person parsers. See: [TryOnDiffusion](https://tryondiffusion.github.io/) for more details.   
-![TryOn](./TryOn.png)
+![TryOn](./tryon.png)
